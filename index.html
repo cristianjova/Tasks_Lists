@@ -10,9 +10,35 @@
   <title>Lista de Tareas</title>
 </head>
 <body>
-  
-
-
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <div id="main" class="card">
+          <div class="card-content">
+            <span class="card-title">Lista de Tareas</span>
+            <div class="row">
+              <form id="task-form">
+                <div class="input-field col s12">
+                  <input type="text" name="task" id="task">
+                  <label for="task">Ingrese tarea</label>
+                </div>
+                <input type="submit" value="Agregar tarea" class="btn">
+              </form>
+            </div>
+          </div>
+          <div class="card-action">
+            <h5 id="task-title">Tareas</h5>
+            <div class="input-field col s12">
+              <input type="text" name="filter" id="filter">
+              <label for="filter">Filtrar tareas</label>
+            </div>
+            <ul class="collection"></ul>
+            <a href="#" class="clear-tasks btn black">Limpiar tareas</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <script
